@@ -1,7 +1,7 @@
 ui <- fluidPage(
     
     # Application title
-    titlePanel("GS4 authenticated via Github Actions"),
+    titlePanel("GS4 authenticated via Github Actions - this came from Github"),
     
 
     flowLayout(
