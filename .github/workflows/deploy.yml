@@ -9,6 +9,7 @@ on:
 env:
   RENV_PATHS_ROOT: ~/.local/share/renv
   SHINY_ACC_NAME: ${{ secrets.SHINY_ACC_NAME }}
+  SHINY_APP_NAME: ${{ secrets.SHINY_APP_NAME }}
   SHINY_TOKEN: ${{ secrets.SHINY_TOKEN }}
   SHINY_SECRET: ${{ secrets.SHINY_SECRET }}
   NAME_OF_YOUR_PROJECT_PASSWORD: ${{secrets.NAME_OF_YOUR_PROJECT_PASSWORD}}
@@ -17,16 +18,12 @@ jobs:
   
   build:
     
-    runs-on: Ubuntu-20.04
+    runs-on: macos-latest
 
     steps:
       
       - uses: actions/checkout@v3
       
-      - name: Install deps
-        run: |
-            sudo apt-get install libcurl4-openssl-dev libssl-dev libsodium-dev
-
       - name: Cache packages
         uses: actions/cache@v3
         with:
