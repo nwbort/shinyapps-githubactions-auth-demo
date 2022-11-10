@@ -1,0 +1,11 @@
+name: mydemoapp
+title: your_shinyapps_title
+username:
+account: nwbort
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7583964
+bundleId: 6497526
+url: https://nwbort.shinyapps.io/mydemoapp/
+when: 1668067172.30888
+lastSyncTime: 1668067172.30891
